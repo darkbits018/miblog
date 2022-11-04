@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";",
-		".current {\n    color: green;\n}"
+		":root {\n    --background: #232946;\n    --headline: #fffff2;\n    --paragarph: #b8c1ec;\n    --btn: #eebbc3;\n    --btntxt: #232946;\n\n}\n\n.current {\n    color: green;\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACf"
+	"mappings": "CCAC,AAAD,IAAK,CAAC,EACF,YAAY,CAAA,QAAC,EACb,UAAU,CAAA,QAAC,EACX,WAAW,CAAA,QAAC,EACZ,KAAK,CAAA,QAAC,EACN,QAAQ,CAAA,QAAC,GAEZ;;AAED,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACf"
 }
