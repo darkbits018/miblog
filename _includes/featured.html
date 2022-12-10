@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" src="../assets/css/styles.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<article class="cards-wrapper ">
+    <ul class="fea-list">
+        {% for post in site.posts limit:3 %}
+        <li class="card-grid-space">
+                <div class="post-con">
+                    <a class="card" href="{{post.url}}" >
+                        <h1 class="card-head">{{post.title}}</h1>
+                        <p>{{post.excerpt}}</p>
+                        <div class="date">2018-jan-16</div>
+                    </a>
+
+                </div>
+        </li>
+        {% endfor %}
+    </ul>
+</article>

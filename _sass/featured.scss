@@ -1,78 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
-
-.current {
-    color: green;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-}
-
-ul li {
-    display: inline-block;
-    padding: 30px;
-}
-
-body {
-    background-color: #232946;
-}
-
-//featured post
-
-:root {
-    --color: #3c3163;
-    --transition-time: 0.5s;    
-}
-
-* {
-    box-sizing: border-box;
+.postsfea {
+    border: 1px solid red;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    overflow: hidden;
 }
 
 a {
     color: inherit;
 }
 
-
 .cards-wrapper {
+    border: 1px solid orange;
+    box-sizing: border-box;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
     padding: 4rem;
-    width: fit-content;
-    margin-top: 0;
-    margin-left: 12%;
-    //position: absolute;
+    margin: 0 auto;
+    width: max-content;
 }
 
 .card {
+    border: 1px solid orangered;
     font-family: 'Heebo';
     --bg-filter-opacity: 0.5;
-    background: grey;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
     height: 20em;
     width: 15em;
     font-size: 1.5em;
     color: white;
     border-radius: 1em;
-    padding: 0.5em;
+    padding: 1em;
+    /*margin: 2em;*/
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     background-size: cover;
     background-position: center;
-    //box-shadow: 0 0 5em -1em black;
+    box-shadow: 0 0 5em -1em black;
     transition: all, var(--transition-time);
     position: relative;
     overflow: hidden;
     border: 10px solid #ccc;
     text-decoration: none;
-    flex-direction: column;
 }
 
+.card:hover {
+    transform: rotate(0);
+}
 
 .card h1 {
-    margin-top: 180px;
+    margin: 0;
     font-size: 1.5em;
     line-height: 1.2em;
 }
@@ -80,8 +60,27 @@ a {
 .card p {
     font-size: 0.75em;
     font-family: 'Open Sans';
-    margin-top: 0.2em;
+    margin-top: 0.5em;
     line-height: 2em;
+}
+
+.card .tags {
+    display: flex;
+}
+
+.card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+    background: var(--color);
+    color: white;
 }
 
 .card .date {
@@ -122,48 +121,32 @@ a {
 
 .card:hover {
     color: var(--color);
-    background-color: white;
 }
 
 .card:hover:before,
 .card:hover:after {
     transform: scale(1);
-    
 }
 
-.card-grid-space .num {
+.card-grid .num {
     font-size: 3em;
     margin-bottom: 1.2rem;
     margin-left: 1rem;
 }
 
-@media screen and (max-width: 1285px) {
-    .cards-wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
+.postsfea {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
 }
 
-@media screen and (max-width: 900px) {
-    .cards-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .info {
-        justify-content: center;
-    }
-
-    .card-grid-space .num {
-        margin-left: 0;
-        text-align: center;
-    }
+.postsfea img {
+    height: 3em;
+    margin-right: 0.5em;
 }
 
-@media screen and (max-width: 500px) {
-    .cards-wrapper {
-        padding: 4rem 2rem;
-    }
-
-    .card {
-        max-width: calc(100vw - 4rem);
-    }
+.postsfea h1 {
+    font-size: 1em;
+    font-weight: normal;
 }
