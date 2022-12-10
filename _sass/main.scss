@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 
-.current {
-    color: green;
-}
-
 ul {
     list-style-type: none;
     display: flex;
@@ -22,7 +18,7 @@ body {
 
 :root {
     --color: #3c3163;
-    --transition-time: 0.5s;    
+    --transition-time: 0.5s;
 }
 
 * {
@@ -128,7 +124,7 @@ a {
 .card:hover:before,
 .card:hover:after {
     transform: scale(1);
-    
+
 }
 
 .card-grid-space .num {
@@ -167,3 +163,34 @@ a {
         max-width: calc(100vw - 4rem);
     }
 }
+
+//navigation
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #121629;
+}
+
+nav a {
+    display: inline-block;
+    color: #b8c1ec;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+}
+
+nav a:hover {
+    background-color: #d4939d;
+    color: #232946;
+}
+
+.current {
+    background-color: #d4939d;
+    color: #232946;
+}
+

@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700");
-.current { color: green; }
-
 ul { list-style-type: none; display: flex; }
 
 ul li { display: inline-block; padding: 30px; }
@@ -40,3 +38,15 @@ a { color: inherit; }
 @media screen and (max-width: 900px) { .cards-wrapper { grid-template-columns: 1fr; } .info { justify-content: center; } .card-grid-space .num { margin-left: 0; text-align: center; } }
 
 @media screen and (max-width: 500px) { .cards-wrapper { padding: 4rem 2rem; } .card { max-width: calc(100vw - 4rem); } }
+
+nav { margin: 0; padding: 0; overflow: hidden; background-color: #121629; }
+
+nav a { display: inline-block; color: #b8c1ec; text-align: center; padding: 16px; text-decoration: none; }
+
+.right { float: right; }
+
+nav a:hover { background-color: #d4939d; color: #232946; }
+
+.current { background-color: #d4939d; color: #232946; }
+
+/*# sourceMappingURL=styles.css.map */
